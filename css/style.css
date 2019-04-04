@@ -16,9 +16,9 @@ ul.slider li{
  padding: 1px 1px 0;
  cursor: pointer;
  display: block;
- -webkit-box-shadow: 1px 3px 15px #7e807e;
- -moz-box-shadow: 1px 3px 15px  #7e807e;
- box-shadow: 1px 3px 15px  #7e807e;
+ -webkit-box-shadow: 1px 3px 15px #4B4C4B;
+ -moz-box-shadow: 1px 3px 15px  #4B4C4B;
+ box-shadow: 1px 3px 15px  #4B4C4B;
  -webkit-transition: all 1.5s;
  -moz-transition: all 1.5s;
  -ms-transition: all 1.5s;
@@ -30,9 +30,9 @@ ul.slider img{
 }
 ul.slider li:hover{
  width: 300px;
- -webkit-box-shadow: 1px 3px 15px #36c5fa;
- -moz-box-shadow: 1px 3px 15px #36c5fa;
- box-shadow: 1px 3px 15px #36c5fa;
+ box-shadow: 1px 3px 15px #DFB8A6; 
+ -webkit-box-shadow: 1px 3px 15px #DFB8A6; 
+ -moz-box-shadow: 1px 3px 15px #DFB8A6;
  -webkit-transition: all 1s;
  -moz-transition: all 1s;
  -ms-transition: all 1s;
