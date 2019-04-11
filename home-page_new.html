@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Caveat" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Home page</title>
+</head>
+<body>
+
+   <header>
+	<div class="slideshow">
+
+	<!-- МЕНЮ -->
+
+    <div class="menu">
+    	<ul class="menu-list">
+    		<li><a href="">Меню 1</a></li>
+    		<li><a href="">Меню 2</a></li>
+    		<li><a href="">Меню 3</a></li>
+    		<li><a href="">Меню 4</a></li>
+    	</ul>
+    </div>
+
+     <!-- СЛАЙДЕР-->
+
+	     <div class="slider">
+			<img src="img/slide1.jpg" alt="">
+			<div class="slider_text">ПУТЕШЕСТВИЕ В ТЫСЯЧУ МИЛЬ НАЧИНАЕТСЯ С ОДНОГО ШАГА
+			</div>
+		 </div>
+
+		<div class="slider">
+			<img src="img/slide2.jpg" alt="">
+			<div class="slider_text">Второй заголовок</div>
+		</div>
+
+		<div class="slider">
+			<img src="img/slide3.jpg" alt="">
+			<div class="slider_text">Третий заголовок</div>
+		</div>
+
+		<a class="prev" onclick="minusSlide()">&#10094;</a>
+		<a class="next" onclick="plusSlide()">&#10095;</a>
+
+        <div class="slider_dots">
+    	   <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+		   <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+		   <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+        </div>
+    </div>   
+   </header>
+
+	<!-- Преимущества -->
+
+       
+       <div class="blog-wrap">
+       	<div class="wrapper">
+             <h2 class="about">НАШИ ПРЕИМУЩЕСТВА</h2>
+             <div class="advantages">
+               <img src="img/a1.png" alt="" />
+               <h3 class="travel_country" style="text-align: center;">Преимущество 1</h3> 
+               <p class="travel_data" style="text-align: center;">Краткое описание</p>
+             </div>
+
+             <div class="advantages">
+                <img src="img/a2.png" alt="" />
+                <h3 class="travel_country " style="text-align: center;">Преимущество 2</h3>
+                <p class="travel_data" style="text-align: center;">Краткое описание</p>
+             </div>
+
+             <div class="advantages">
+                <img src="img/a3.png" alt="" />
+                <h3 class="travel_country " style="text-align: center;">Преимущество 3</h3>
+                <p class="travel_data" style="text-align: center;">Краткое описание</p>
+             </div>
+         </div>
+        </div>
+
+
+   <!-- Параллакс -->
+
+   <div class="parallax" id="parallax_pic">
+       <div class="parallax_txt">
+          <span style="background: rgba(0, 0, 0, 0.5);">Путешествия – это единственная вещь на свете, покупая которую, становишься богаче</span>
+       </div>
+   </div>
+
+   <!--Блог-->
+
+	<div class="blog-wrap">
+      <div class="wrapper">
+        <h3 Class="about">БЛОГ О ПУТЕШЕСТВИЯХ</h3>
+	    <div class="blog image">
+       	      <img src="img/1.jpg" alt="">
+	   	      <h4 class="about">TITLE</h4>
+	   	      <span class="travel_data">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, culpa numquam ea reiciendis at deserunt quod repellendus.<br>
+	   	      <a href="" style="text-decoration:underline;">Подробне</a>
+	   	      </span>
+        </div>
+
+        <div class="blog image">
+	        <img src="img/2.jpg" alt="">
+       	    <h4 class="about">TITLE</h4>
+            <span class="travel_data">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, culpa numquam ea reiciendis at deserunt quod repellendus.<br>
+            <a href="" style="text-decoration:underline;">Подробне</a>
+            </span>
+        </div>
+
+        <div class="link-wrap">
+          <a href="" class="hover-shadow hover-color">
+          <span>R</span><span>E</span><span>A</span><span>D</span>&nbsp;<span>M</span><span>O</span><span>R</span><span>E</span></a>
+        </div>
+      </div>
+    </div>
+
+<!-- Параллакс -->
+
+   <div class="parallax" id="parallax_pic2">
+      <div class="parallax_txt">
+        <span style="background: rgba(0, 0, 0, 0.5);"> «Путешествовать — значит осознать, что все ошибаются насчет других стран» <br>— Олдос Хаксли</span>
+      </div>
+   </div>
+
+   <!-- Ближайшие поездки -->
+
+    <div class="blog-wrap">
+      <div class="wrapper">
+       <h3 class="about">БЛИЖАЙШИЕ ПОЕЗДКИ</h3>
+
+       <div class="blog1 image"><img src="img/13.jpg" class="travel">
+       	  <h3 class="travel_country ">Сказочая Прага</h3>
+       	    <p class="travel_data">
+       	  	Дата:<br> 
+       	  	01.05-05.05<br>
+       	    Lorem ipsum dolor sit amet.</br>
+       		<a href="" style="text-decoration:underline;">Подробне</a></p>
+       </div>
+
+       <div class="blog1 image"><img src="img/14.jpg" class="travel">
+       	  <h3 class="travel_country">Фототур "Весенний Париж"</h3>
+	        <p class="travel_data">
+	        	Дата:<br> 
+	        	01.05-05.05<br>
+	            Lorem ipsum dolor sit amet.</br>
+	            <a href="" style="text-decoration:underline;">Подробне</a></p>
+       </div>
+
+       <div class="blog1 image"><img src="img/15.jpg" class="travel">
+       	   <h3 class="travel_country">Солнечная Барселона</h3>
+	         <p class="travel_data">
+	         	Дата:<br> 
+	         	01.05-05.05<br>
+	            Lorem ipsum dolor sit amet.</br>
+	            <a href="" style="text-decoration:underline;">Подробне</a></p>
+       </div>
+      </div>
+   	</div>
+
+<!-- Параллакс -->
+
+ <div class="parallax" id="parallax_pic3">
+      <div class="parallax_txt">
+        <span style="background: rgba(0, 0, 0, 0.5);"> Не люди создают путешествия, а путешествия создают людей</span>
+      </div>
+ </div>
+
+ <!-- О нас -->
+
+   <div class="blog-wrap about">
+   	<div class="wrapper">
+   	  <img src="img/11.jpg" class="circle">
+   	  <h3>Про нас</h3>
+      <p style="font-family: 'Caveat', cursive;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates commodi ipsa harum sit! Laborum tenetur dolore, quae aspernatur quia ex suscipit venieces sitatibus eaque placeat fugiat ut repellendus, temporibus!</p>
+ 
+      <div class="link-wrap">
+        <a href="" class="hover-shadow hover-color">
+        <span>R</span><span>E</span><span>A</span><span>D</span>&nbsp;<span>M</span><span>O</span><span>R</span><span>E</span></a>
+      </div>
+    </div>
+   </div>
+
+ <!-- Футер -->
+
+<div class="footer">
+   <div class="footer_wrap">
+	   <p style="font-family: sans-serif; font-size: 14px; text-align: center; line-height:18px">
+       Телефон: 0 (000) 000-00-00 <br>
+       E-mail адрес: info@rg-travel.ru<br>
+       Адрес офиса: г.Москва, Троилинский переулок, д. 3, оф. 401<br><br>
+       Как пройти: наш офис находится в 50 метрах от Старого Арбата, недалеко от выхода из станции метро Смоленская (синяя ветка), в Бизнес-Центре «На Смоленской»</p>
+   <span>Follow us </span>
+
+  <ul>
+    <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+    <li><i class="fa fa-vk" aria-hidden="true"></i></li>
+    <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+    <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+  </ul>
+</div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

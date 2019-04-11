@@ -1,215 +1,170 @@
-body { margin:0;padding:0;font-family: 'Roboto Slab', serif; }
-
-dws-wrapper{
- max-width: 650px;
- margin: 0 auto;
-}
-ul.slider{
- display: flex;
- justify-content: center;
- margin-top: 50px;
- padding: 0;
-}
-ul.slider li{
- width: 50px;
- overflow: hidden;
- padding: 1px 1px 0;
- cursor: pointer;
- display: block;
- -webkit-box-shadow: 1px 3px 15px #4B4C4B;
- -moz-box-shadow: 1px 3px 15px  #4B4C4B;
- box-shadow: 1px 3px 15px  #4B4C4B;
- -webkit-transition: all 1.5s;
- -moz-transition: all 1.5s;
- -ms-transition: all 1.5s;
- -o-transition: all 1.5s;
- transition: all 1.5s;
-}
-ul.slider img{
- width: 300px;
-}
-ul.slider li:hover{
- width: 300px;
- box-shadow: 1px 3px 15px #DFB8A6; 
- -webkit-box-shadow: 1px 3px 15px #DFB8A6; 
- -moz-box-shadow: 1px 3px 15px #DFB8A6;
- -webkit-transition: all 1s;
- -moz-transition: all 1s;
- -ms-transition: all 1s;
- -o-transition: all 1s;
- transition: all 1s;
-}
-ul.slider li:nth-child(4){
- width: 300px;
-}
-ul.slider:hover li:nth-child(4){
- width: 50px;
-}
-ul.slider li:nth-child(4):hover{
- width: 300px;
+body {
+	background-color: #fcf8ec;
+	margin: 0;
+	padding:0;
+	font-family: 'Caveat', cursive;
+	font-size: 25px;
+	color: #947973;
 }
 
-/* Форма подписки */
-.subscribe {
-  background: rgba(0, 0, 0, 0.65);
-  padding:10px 30px;
-  display: inline-block;
-  border-radius: 3px;
-}  
+/* МЕНЮ */
 
-.parallax {
-  position:relative;
-  z-index:1;
-  height:600px;
-  text-align:center;
-  box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;
-}
-
-#trans1 {
-  background: url(../src/beach-1236581_1280.jpg) no-repeat fixed;
-  height:100vh;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#trans2 {
-
-  background: url(../src/winding-road-1556177_1280.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-   
-}
-
-#trans3 {
-  background: url(../src/architecture-3121009_1280.jpg) no-repeat top center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  
-}
-.tour { 
-  margin: 0 auto;
-  text-align: center;
-  background-color: #fff;
-  padding-bottom: 20px;
-}
-
-/*Анимация картинок*/
-.box {
-  background-color: red;
-  margin: 0 auto;
-  display: inline-block;
-  margin: 10px;
-  width: 200px;
-  position: relative;
-  background: linear-gradient(20deg, #f00, #00f);
-  overflow: hidden;
-}
-
-.box a{
- display: block;
- color: #fff;
- text-decoration: none;
-}
-.box a img{
- width: 100%;
-}
-
-.box-text{
- position: absolute;
- top: 0;
- left: 0;
- padding: 20px;
- opacity: 0;
- z-index: 100;
- transition: .5s ease;
-}
-.box-text h3{
- font-size: 18px;
-}
-.box-text p{
- font-size: 12px;
-}
-
-.box a:before,
-.box a:after{
- content: '';
- position: absolute;
- width: 200%;
- height: 200%;
- transition: .5s ease-in-out;
- mix-blend-mode: darken;
-}
-.box a:before{
- right: 0;
- bottom: -100%;
- background: rgba(230, 12, 50, 0.8);
- transform: skew(-45deg) translateX(100%);
-}
-.box a:after{
- left: 0;
- top: -100%;
- background: rgba(11, 72, 174, 0.8);
- transform: skew(135deg) translateX(-100%);
-}
-.box:hover a:before{
- transform: skew(-45deg) translateX(0%);
-}
-.box:hover a:after{
- transform: skew(135deg) translateX(0%);
-}
-.box:hover .box-text{
- opacity: 1;
- color:#fff;
+.menu {
+	width: 100%;
+	position: absolute;
 }
 
 
-.txt {
-  font-family: 'Roboto Slab', serif;
-  font-size:50px;
-  line-height:175%;
-  letter-spacing:1.5px;
-  color:#000;
-  text-align:center;
-  padding:150px 10px 0 0 ;
+.menu-list a {
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
 }
 
-.content {
-  box-sizing:border-box;-moz-box-sizing:border-box;
-  position:relative;
-  z-index:2;
-  width:100%;
-}
-.white {
-  color:#fff;
-}
-.right{
-  color:#000;
-  padding: 20px 100px;
-  font-style: italic;
-  font-size: 12px;
-  text-align:center;
-  line-height:180%;
+.menu-list {
+	text-decoration: none;
+	list-style: none;
+	text-align: center;
+    font-size: 18px;
 }
 
-/*ссылка с анимацией*/
+.menu-list li {
+	display: inline;
+	margin-right: 20px;
+}
+
+/* Слайдер */
+
+.slideshow {
+	max-width: 100%;
+	height: 600px;
+	margin:auto;
+}
+
+.slider img {
+	width: 100%;
+	object-fit: cover;
+	height: 600px;
+}
+
+.slider_text {
+	font-family: 'Amatic SC', cursive;
+	font-weight: 900;
+	position: absolute;
+    color: #fff;
+    font-size:30px;
+    left: 50%;
+    top: 50%;
+    margin-top: -25px;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 1px #000;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    width: auto;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.8s ease;
+}
+
+.next {
+    right: 0;
+ }
+ 
+ .prev {
+    left: 0;
+ }
+ 
+ .prev:hover,
+ .next:hover {
+ 	background-color: rgba(0, 0, 0, 0.8);
+ }
+
+ .slider_dots {
+ 	text-align:center;
+ 	z-index: 10;
+ }
+
+.slider-dots_item {
+	cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 5px 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition:  0.8s ease;
+}
+
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+
+.slider {
+	animation-name:fade; 
+	animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* ПРЕИМУЩЕСТВА */
+
+.advantages {
+	display: inline-block;
+	margin-right: 70px;
+}
+
+.advantages:last-child{
+  margin-right: 0;
+}
+
+/* БЛОГ */
+
+.blog-wrap {
+    width: 100%;
+    position:relative;
+    z-index:2;
+   }
+
 .wrapper {
-  font-family: 'Roboto Slab', serif;
+	width: 80%;
+	margin: 40px auto;
+	text-align: center;
+}
+
+.blog {
+    width: 400px;
+    display: inline-block;
+    margin: 20px;
+    font-style:italic;
+    padding: 20px;
+}
+
+/* ССЫЛКА READ MORE */
+
+.link-wrap {
+  font-family: 'Amatic SC', cursive;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5vw;
+  font-size: 25px;
   font-weight: 100;
   padding: 30px;
 }
 a {
-  color: #000;
+  color: #947973;
   text-decoration: none;
 }
 a span {
@@ -221,25 +176,43 @@ a span:nth-child(2) {
   transition-delay: 0.1s;
 }
 a span:nth-child(3) {
-  transition-delay: 0.2s;
+  transition-delay: 0.15s;
 }
 a span:nth-child(4) {
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
 }
 span:nth-child(5) {
+  transition-delay: 0.25s;
+}
+a span:nth-child(6) {
+  transition-delay: 0.3s;
+}
+a span:nth-child(7) {
+  transition-delay: 0.35s;
+}
+a span:nth-child(8) {
   transition-delay: 0.4s;
 }
 a:hover span {
   font-weight: 700;
 }
-a:hover span:nth-child(5) {
+a:hover span:nth-child(8) {
   transition-delay: 0.4s;
 }
-a:hover span:nth-child(4) {
+a:hover span:nth-child(7) {
+  transition-delay: 0.35s;
+}
+a:hover span:nth-child(6) {
   transition-delay: 0.3s;
 }
-a:hover span:nth-child(3) {
+a:hover span:nth-child(5) {
+  transition-delay: 0.25s;
+}
+a:hover span:nth-child(4) {
   transition-delay: 0.2s;
+}
+a:hover span:nth-child(3) {
+  transition-delay: 0.15s;
 }
 a:hover span:nth-child(2) {
   transition-delay: 0.1s;
@@ -254,22 +227,175 @@ a.hover-color:hover {
   border-color: darkmagenta;
 }
 
-#footer {
-  text-align: center;
-  padding: 20px 0 20px;
-  box-sizing:border-box;-moz-box-sizing:border-box;
-  position:relative;
-  z-index:2;
-  background-color: #4a474c; 
-  width:100%;
-  height:auto;
-  margin:0;
+/* ПАРАЛЛАКС*/
 
+.parallax {
+  position:relative;
+  z-index:1;
+  height:600px;
+  text-align:center;
+  box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;
 }
 
-@media(max-width:767px){
-  .trans1, .trans2, .trans3 {
-    background-attachment:scroll;
-    display:none;
-  }
+#parallax_pic {
+  width: 100%;
+  height:400px;
+  background: url(../img/slide4.jpg) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#parallax_pic2 {
+	width: 100%;
+	height:400px;
+	background-image: url(../img/12.jpg);
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+#parallax_pic3 {
+	width: 100%;
+	height:400px;
+	background-image: url(../img/16.jpg);
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.parallax_txt {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 900;
+  font-size:30px;
+  line-height:175%;
+  letter-spacing:1.5px;
+  color:#000;
+  text-align:center;
+  padding:150px 10px 0 0 ;
+  color:#fff;
+}
+
+/*ЗУМ ИЗОБРАЖЕНИЙ*/
+
+.image {
+	overflow: hidden;
+	width: 350px;
+	height: auto;
+}
+
+.image img {
+	transition: all 1s ease-in-out;
+}
+
+.image img:hover{
+	transform: scale(1.1);
+}
+
+/* О НАС*/
+
+.circle {
+	border-radius:50%;
+	width: 150px;
+	height: 150px;
+    object-fit: cover;
+    display:block;
+	margin:auto;
+}
+
+.about {
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	font-style: normal;
+}
+
+/* БЛИЖАЙШИЕ ПОЕЗДКИ */
+
+.blog1 {
+    display: inline-block;
+}
+
+.travel {
+	width: 300px;
+	height: auto;
+	object-fit: cover;
+}
+
+.travel_country {
+	font-family: 'Amatic SC', cursive;
+	font-size: 20px;
+	text-align: left;
+}
+
+.travel_data {
+	font-family: sans-serif;
+	font-size: 14px; 
+	text-align: left; 
+	line-height:18px
+}
+
+/* ФУТЕР */
+
+.footer {
+   background-color:#947973;
+   position:relative;
+   z-index:1;
+   height: 400px;
+}
+
+.footer_wrap{
+  position:relative;
+  width: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color:#fff;
+  padding-bottom: 40px;
+}
+
+.footer ul{
+   list-style: none;
+}
+
+.footer ul li{
+  float: left;
+  width: 65px;
+  height: 60px;
+  border: 3px solid #fff;
+  margin-right: 36px;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.footer ul li:last-child{
+  margin-right: 0;
+}
+
+.footer ul li .fa{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.5s linear;
+}
+
+.footer ul li:hover{
+  background: #fff;
+  box-shadow: 0 0 30px 3px #fff;
+}
+
+.footer ul li:hover .fa{
+  color: #947973;
 }
